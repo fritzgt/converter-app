@@ -1,0 +1,21 @@
+body {
+	background-color: #431F86;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: white;
+	text-align: center;
+	font-family: 'Asap', sans-serif;
+
+}
+
+input {
+	border-radius: 7px;
+}
+
+#icon {
+	width: auto;
+	height: 150px;
+}
+
