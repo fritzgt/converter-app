@@ -1,30 +1,5 @@
 //Miles to KM converter
 
-//Questions
-var question = document.getElementById(type);
-
-var myInput =  document.getElementById(ammount);
-
-
-
-//Loop
-
-// function mainFunc(yesNo) {
-
-// 	var x = document.getElementById("mySelect").value;
-
-// if (x === "miles"){
-
-// alert("miles");
-// mEquation();
-
-// } else (x === "km"){
-
-// alert("KM");
-// kEquation();
-
-// };
-
 //Function 
 
 function mEquation() {
@@ -42,5 +17,8 @@ function kEquation() {
 }
 
 function refreshFunc() {
-    location.reload();
+    document.getElementById('mInput').value = '';
+    document.getElementById('kInput').value = '';
+    document.getElementById('mInput').placeholder = 'Enter Miles';
+    document.getElementById('kInput').placeholder = 'Enter KM';
 }
