@@ -8,7 +8,7 @@ body {
 	text-align: center;
 	font-family: 'Asap', sans-serif;
 	max-width: 960px;
-	max-height: 400px;
+	max-height: auto;
 
 }
 
@@ -25,3 +25,4 @@ input {
 #mainCont {
 
 }
+
