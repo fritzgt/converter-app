@@ -7,11 +7,14 @@ body {
 	color: white;
 	text-align: center;
 	font-family: 'Asap', sans-serif;
+	max-width: 960px;
+	max-height: 400px;
 
 }
 
 input {
 	border-radius: 7px;
+	width: 60%;
 }
 
 #icon {
@@ -19,3 +22,6 @@ input {
 	height: 150px;
 }
 
+#mainCont {
+
+}
