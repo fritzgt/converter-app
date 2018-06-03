@@ -31,12 +31,16 @@ function mEquation() {
 	var miles = .62;
 	var x = document.getElementById("mInput").value;
     var totalMiles = miles * x;
-    document.getElementById("resultkm").innerHTML = totalMiles;
+    document.getElementById("kInput").placeholder = totalMiles;
 }
 
 function kEquation() {
 	var kilometers = 1.60;
 	var x = document.getElementById("kInput").value;
     var totalMiles = x * kilometers;
-    document.getElementById("resultMiles").innerHTML = totalMiles;
+    document.getElementById("mInput").placeholder = totalMiles;
+}
+
+function refreshFunc() {
+    location.reload();
 }

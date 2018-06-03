@@ -15,18 +15,17 @@
 <br><br>
 <img id="icon" src="resources/images/31648g-SqaL.png"><br><br>
 
-<!-- Enter amount -->
- <input id="mInput" type="number" name="amount" oninput="mEquation()" placeholder="Enter Miles"><br><br>
-
+<!-- Miles to KM-->
+ <input id="mInput" type="number" name="amount" oninput="mEquation()" placeholder="Enter Miles" onblur="this.value='Enter Miles'"><br><br>
 <!-- Display result -->
-<h1>=  <span id="resultkm"></span></h1><br>
+<h1>=</h1><br>
 
-<!-- Enter amount -->
- <input id="kInput" type="number" name="amount" oninput="kEquation()" placeholder="Enter KM"><br><br>
+<!-- KM to Miles -->
+ <input id="kInput" type="number" name="amount" oninput="kEquation()" placeholder="Enter KM" onblur="this.value='Enter KM'"><br><br><br>
 
-<!-- Display result -->
-<h1>=  <span id="resultMiles"></span></h1>	
+<!-- Refresh button -->
 
+<button type="button" class="btn btn-primary" onclick="refreshFunc()">Refresh</button>
 
 <script type="text/javascript" src="resources/js/javaScript.js"></script>
 </body>
