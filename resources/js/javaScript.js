@@ -13,7 +13,8 @@ function kEquation() {
 	var kilometers = 1.60;
 	var x = document.getElementById("kInput").value;
     var totalMiles = x * kilometers;
-    document.getElementById("mInput").value = totalMiles;
+    var n = totalMiles.toFixed(2);
+    document.getElementById("mInput").value = n;
 }
 
 function refreshFunc() {
