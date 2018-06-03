@@ -7,14 +7,11 @@ body {
 	color: white;
 	text-align: center;
 	font-family: 'Asap', sans-serif;
-	max-width: 960px;
-	max-height: auto;
 
 }
 
 input {
 	border-radius: 7px;
-	width: 60%;
 }
 
 #icon {
@@ -22,7 +19,25 @@ input {
 	height: 150px;
 }
 
-#mainCont {
-
+h1 {
+	font-size: 70px;
 }
 
+
+@media only screen and (max-width: 400px) {
+    
+ body {
+	background-color: red;
+	width: auto;
+}
+
+#icon {
+	width: auto;
+	height: 250px;
+}
+
+input {
+	height: 50px;
+}
+
+}
