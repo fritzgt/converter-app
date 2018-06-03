@@ -1,8 +1,15 @@
-
+/*
 .html{
 	width: 500px;
 	margin: 0;
 }
+*/
+
+html{
+	width: 500px;
+	margin: 0;
+}
+
 body {
 	background-color: #431F86;
 	background-attachment: fixed;
@@ -12,10 +19,13 @@ body {
 	color: white;
 	text-align: center;
 	font-family: 'Asap', sans-serif;
+	width: 500px;
+	margin: 0;
 }
 
 input {
 	border-radius: 7px;
+
 }
 
 #icon {
@@ -25,23 +35,4 @@ input {
 
 h1 {
 	font-size: 70px;
-}
-
-
-@media only screen and (max-width: 600px) {
-    
- body {
-	background-color: red;
-	width: auto;
-}
-
-#icon {
-	width: auto;
-	height: 200px;
-}
-
-input {
-	height: 50px;
-}
-
 }
