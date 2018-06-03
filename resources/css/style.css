@@ -1,3 +1,8 @@
+
+.html{
+	width: 500px;
+	margin: 0;
+}
 body {
 	background-color: #431F86;
 	background-attachment: fixed;
@@ -7,7 +12,6 @@ body {
 	color: white;
 	text-align: center;
 	font-family: 'Asap', sans-serif;
-
 }
 
 input {
@@ -24,7 +28,7 @@ h1 {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     
  body {
 	background-color: red;
@@ -33,7 +37,7 @@ h1 {
 
 #icon {
 	width: auto;
-	height: 250px;
+	height: 200px;
 }
 
 input {
