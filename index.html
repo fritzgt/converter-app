@@ -32,12 +32,23 @@
 	<img id="icon" src="resources/images/31648g-SqaL.png"><br><br>
 
 	<!-- Miles to KM-->
-	 <input id="mInput" type="number" name="amount" oninput="mEquation()" placeholder="Enter KM" ><br> 
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">KM</span>
+  </div>
+  <input id="mInput" type="number" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
+
 	<!-- Display result -->
 	<h1>=</h1><br>
 
 	<!-- KM to Miles -->
-	 <input id="kInput" type="number" name="amount" oninput="kEquation()" placeholder="Enter Miles"><br><br> 
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Miles</span>
+  </div>
+  <input id="kInput" type="number" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
 
 	<!-- Refresh button -->
 
