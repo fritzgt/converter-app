@@ -32,24 +32,26 @@
 	<img id="icon" src="resources/images/31648g-SqaL.png"><br><br>
 
 	<!-- Miles to KM-->
+<fieldset disabled>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">KM</span>
+    <span class="input-group-text" id="inputGroup-sizing-default">€</span>
   </div>
-  <input id="mInput" type="number" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  <input id="mInput" type="number" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Disabled / Under construction">
 </div>
-
+</fieldset>
 	<!-- Display result -->
 	<h1>=</h1><br>
 
 	<!-- KM to Miles -->
+	<fieldset disabled>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Miles</span>
+    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
   </div>
-  <input id="kInput" type="number" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  <input id="kInput" type="number" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Disabled / Under construction">
 </div><br><br>
-
+</fieldset>
 	<!-- Refresh button -->
 
 	<button type="button" class="btn btn-primary" onclick="refreshFunc()">Reset</button>
