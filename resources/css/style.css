@@ -6,13 +6,13 @@
 */
 
 html{
-	width: 500px;
-	margin: 0;
+	
 }
 
 body {
 	background-color: #431F86;
-	background-attachment: fixed;
+	text-align: center;
+	/*
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,7 +20,12 @@ body {
 	text-align: center;
 	font-family: 'Asap', sans-serif;
 	width: 500px;
-	margin: 0;
+	margin: 0;*/
+}
+
+.container{
+	
+
 }
 
 input {

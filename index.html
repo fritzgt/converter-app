@@ -10,22 +10,28 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 	<!-- ios icon -->
 	<link rel="apple-touch-icon" href="resources/images/31648g-SqaL.png">
+    <!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-<br><br>
-<img id="icon" src="resources/images/31648g-SqaL.png"><br><br>
 
-<!-- Miles to KM-->
- <input id="mInput" type="number" name="amount" oninput="mEquation()" placeholder="Enter KM" ><br><br>
-<!-- Display result -->
-<h1>=</h1><br>
+<div class="container" > 	
+	<br><br>
+	<img id="icon" src="resources/images/31648g-SqaL.png"><br><br>
 
-<!-- KM to Miles -->
- <input id="kInput" type="number" name="amount" oninput="kEquation()" placeholder="Enter Miles"><br><br><br>
+	<!-- Miles to KM-->
+	 <input id="mInput" type="number" name="amount" oninput="mEquation()" placeholder="Enter KM" ><br><br>
+	<!-- Display result -->
+	<h1>=</h1><br>
 
-<!-- Refresh button -->
+	<!-- KM to Miles -->
+	 <input id="kInput" type="number" name="amount" oninput="kEquation()" placeholder="Enter Miles"><br><br><br>
 
-<button type="button" class="btn btn-primary btn-lg" onclick="refreshFunc()">Refresh</button>
+	<!-- Refresh button -->
+
+	<button type="button" class="btn btn-primary btn-lg" onclick="refreshFunc()">Refresh</button>
+</div>
 
 <script type="text/javascript" src="resources/js/javaScript.js"></script>
 </body>
