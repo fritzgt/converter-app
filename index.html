@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Length Converter</title>
+	<title>Unit Converter</title>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<!-- Font -->
@@ -14,7 +14,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Font awsome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
 </head>
 <body>
 
@@ -25,37 +24,36 @@
   <a class="navbar-brand fa fa-dollar-sign" href="currency.html"></a>
   <a class="navbar-brand fa fa-flask" href="volume.html"></a>
   <a class="navbar-brand fa fa-balance-scale" href="weight.html"></a>
-</nav>
+</nav><br>
 
-<!-- App -->
-<br>
+<!-- App starts here-->
 <div class="container" > 	
 	<img id="icon" src="resources/images/31648g-SqaL.png"><br><br>
 
-	<!-- Miles to KM-->
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">KM</span>
-  </div>
-  <input id="mInput" type="number" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-</div>
+	<!-- KM to Miles-->
+	<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text" id="inputGroup-sizing-default">KM</span>
+		  </div>
+		  <input id="kInput" type="number" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+	</div>
 
-	<!-- Display result -->
-	<h1>=</h1><br>
+	<!-- Equal sign -->
+	 <h1>=</h1><br>
 
-	<!-- KM to Miles -->
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Miles</span>
-  </div>
-  <input id="kInput" type="number" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-</div><br><br>
+	<!-- Miles to KM -->
+	<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text" id="inputGroup-sizing-default">Miles</span>
+		  </div>
+		  <input id="mInput" type="number" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+	</div><br><br>
 
 	<!-- Refresh button -->
-
 	<button type="button" class="btn btn-primary" onclick="refreshFunc()">Reset</button>
 </div>
 
+<!-- JS file -->
 <script type="text/javascript" src="resources/js/javaScript.js"></script>
 </body>
 </html>
