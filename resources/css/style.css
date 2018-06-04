@@ -37,6 +37,6 @@ h1 {
 
 /*NavBar*/
 
-nav a {
-
+#active {
+	color: #431F86;
 }
