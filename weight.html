@@ -25,40 +25,36 @@
   <a class="navbar-brand fa fa-dollar-sign" href="currency.html"></a>
   <a class="navbar-brand fa fa-flask" href="volume.html"></a>
   <a id="active" class="navbar-brand fa fa-balance-scale" href="weight.html"></a>
-</nav>
+</nav><br>
 
 <!-- App -->
-<br>
 <div class="container" > 	
 	<img id="icon" src="resources/images/31648g-SqaL.png"><br><br>
 
-	<!-- Miles to KM-->
-<fieldset disabled>	
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Kg</span>
-  </div>
-  <input id="mInput" type="number" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Disabled / Under construction">
-</div>
-</fieldset>
-	<!-- Display result -->
+	<!-- Kg to lb-->
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+		    <span class="input-group-text" id="inputGroup-sizing-default">Kg</span>
+		</div>
+		<input id="kInput" type="number" name="amount" oninput="lbEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+	</div>
+
+	<!-- Equal sign -->
 	<h1>=</h1><br>
 
-	<!-- KM to Miles -->
-<fieldset disabled>	
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">lb</span>
-  </div>
-  <input id="kInput" type="number" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Disabled / Under construction">
-</div><br><br>
-</fieldset>
+	<!-- lb to kg-->
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+		    <span class="input-group-text" id="inputGroup-sizing-default">lb</span>
+		</div>
+		<input id="mInput" type="number" name="amount" oninput="kgEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+	</div><br><br>
 
 	<!-- Refresh button -->
-
 	<button type="button" class="btn btn-primary" onclick="refreshFunc()">Reset</button>
 </div>
 
+<!-- JS file -->
 <script type="text/javascript" src="resources/js/javaScript.js"></script>
 </body>
 </html>

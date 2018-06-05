@@ -57,3 +57,22 @@ function litEquation() {
 
 }
 
+//Function kg to lb
+function lbEquation() {
+	var lb =  2.2046226218;
+	var kg = document.getElementById("kInput").value;
+    var totalLb = kg * lb;
+    var l = totalLb.toFixed(3); //Result shows only one decimal
+    document.getElementById("mInput").value = l;
+}
+
+//Function lb to kg
+function kgEquation() {
+	var kg = 0.45359237; 
+	var lb = document.getElementById("mInput").value;
+    var totalKg = lb * kg; 
+    var k = totalKg.toFixed(3); //Result shows only one decimal
+    document.getElementById("kInput").value = k;
+
+}
+
