@@ -1,5 +1,4 @@
 //Function KM to Miles
-
 function mEquation() {
 	var miles = .62;
 	var k = document.getElementById("kInput").value;
@@ -38,3 +37,23 @@ function cEquation() {
     var f = totalF.toFixed(1); //Result shows only one decimal
     document.getElementById("mInput").value = f;
 }
+
+//Function liters to Gallons
+function galEquation() {
+	var gallon =  0.2641720524;
+	var l = document.getElementById("kInput").value;
+    var totalG = l * gallon;
+    var g = totalG.toFixed(3); //Result shows only one decimal
+    document.getElementById("mInput").value = g;
+}
+
+//Function Gallons to Liters
+function litEquation() {
+	var liter = 3.785411784; 
+	var g = document.getElementById("mInput").value;
+    var totalL = liter * g; 
+    var l = totalL.toFixed(3); //Result shows only one decimal
+    document.getElementById("kInput").value = l;
+
+}
+
