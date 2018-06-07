@@ -98,19 +98,18 @@ function refreshFunc() {
 
 // iOS webapp links
 
-$(document).ready(function(){
-    if (("standalone" in window.navigator) && window.navigator.standalone) {
-      // For iOS Apps
-      $('a').on('click', function(e){
-        e.preventDefault();
-        var new_location = $(this).attr('href');
-        if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined){
-          window.location = new_location;
-        }
-      });
-    }
-  });
+var eventHandler = function (event) {
+    // Only run for iOS full screen apps
+    if (('standalone' in window.navigator) && window.navigator.standalone) {
+        // Only run if link is an anchor and points to the current page
+        if ( event.target.tagName.toLowerCase() !== 'a' || event.target.hostname !== window.location.hostname || event.target.pathname !== window.location.pathname || !/#/.test(event.target.href) ) return;
 
+        // Open link in same tab
+        event.preventDefault();
+        window.location = event.target.href;
+    }
+}
+window.addEventListener('click', eventHandler, false);
 
 
 //Currency converter API
