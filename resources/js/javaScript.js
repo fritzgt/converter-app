@@ -16,12 +16,6 @@ function kEquation() {
     document.getElementById("kInput").value = km;
 }
 
-//Clear input fields
-function refreshFunc() {
-    document.getElementById('mInput').value = '';
-    document.getElementById('kInput').value = '';
-}
-
 //Function Celsius to Fahrenheit
 function fEquation() {
 	var f = document.getElementById("mInput").value;
@@ -73,6 +67,47 @@ function kgEquation() {
     var totalKg = lb * kg; 
     var k = totalKg.toFixed(3); //Result shows only one decimal
     document.getElementById("kInput").value = k;
-
 }
+
+//Clear input fields
+function refreshFunc() {
+    document.getElementById('mInput').value = '';
+    document.getElementById('kInput').value = '';
+}
+
+
+
+//Currency converter API
+
+
+// set endpoint and your access key
+
+// endpoint = 'live'
+// access_key = 'ed2bc073eb4d6c41c090bd53da71e8ab';
+
+// var from = $('#kInput').val();
+// var to = $('#mInput').val();
+// var combine = from+to;
+
+// $.ajax({
+//     url: 'http://apilayer.net/api/' + endpoint + '?access_key=' + access_key,   
+//     dataType: 'jsonp',
+//     success: function(json) {
+
+//         // exchange rata data is stored in json.quotes
+//         alert(json.quotes.USDGBP);
+        
+//         // source currency is stored in json.source
+//         alert(json.source);
+        
+//         // timestamp can be accessed in json.timestamp
+//         alert(json.timestamp);
+        
+//     }
+// });
+
+//http://apilayer.net/api/live?access_key=ed2bc073eb4d6c41c090bd53da71e8ab&currencies=EUR&format=1
+
+
+
 
