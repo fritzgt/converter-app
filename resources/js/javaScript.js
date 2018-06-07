@@ -96,7 +96,7 @@ function refreshFunc() {
     document.getElementById('kInput').value = '';
 }
 
-// iOS webapp links
+// iOS native webapp links to prevent opening on safari
 
 var eventHandler = function (event) {
     // Only run for iOS full screen apps
