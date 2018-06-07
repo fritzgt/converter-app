@@ -69,6 +69,27 @@ function kgEquation() {
     document.getElementById("kInput").value = k;
 }
 
+
+//Function meter to feet
+function feetEquation() {
+	var feet =  3.28084;
+	var meter = document.getElementById("kInput").value;
+    var totalfeet = meter * feet;
+    var f = totalfeet.toFixed(2); //Result shows only one decimal
+    document.getElementById("mInput").value = f;
+}
+
+//Function feet to meter
+function meterEquation() {
+	var meter = 0.3048; 
+	var feet = document.getElementById("mInput").value;
+    var totalmeter = feet * meter; 
+    var m = totalmeter.toFixed(2); //Result shows only one decimal
+    document.getElementById("kInput").value = m;
+}
+
+
+
 //Clear input fields
 function refreshFunc() {
     document.getElementById('mInput').value = '';
