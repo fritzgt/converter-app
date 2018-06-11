@@ -15,9 +15,18 @@ h1 {
 	font-size: 70px;
 }
 
-.navbar {
-	height: 70px;
-	padding-bottom: 30px;
+#menu {
+	height: 60px;
+	padding-bottom: 25px;
+}
+
+#brand{
+	height: 30px;
+}
+
+#brandtext {
+	width: 100%;
+    text-align: center;
 }
 
 .fa {
