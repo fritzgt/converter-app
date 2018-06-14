@@ -8,6 +8,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 	<!-- Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
+	  <!--ANDROID-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Unit Converter">
+
+    <!--  APPLE STUFF  -->
 	<!-- ios icon -->
 	<link rel="apple-touch-icon" href="resources/images/picon2.png" >
     <!-- Launch Icon Title -->
@@ -36,10 +42,20 @@
   <a class="navbar-brand fa fa-balance-scale text-secondary" href="weight.html"></a>
 </nav><br>
 
-<!-- App starts here-->
-<div class="container" > 	
-	<img id="icon" src="resources/images/31648g-SqaL.png"><br><br><br>
+<!-- About us section -->
+<div id="aboutus" class="dropleft float-right">
+  <button id="aboutbutton" type="button" class="fa fa-ellipsis-v" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+  <div class="dropdown-menu">
+    <a href="https://github.com/fritzgt" target="_blank">Made by fritzgt</a>
+    <p>Ver: 1.0</p>
+  </div>
+</div>
 
+
+<!-- App starts here-->
+<div class="container" > 
+
+	<img id="icon" src="resources/images/31648g-SqaL.png"><br><br><br>
 	<!-- KM to Miles-->
 	<div class="input-group mb-3">
 		  <div class="input-group-prepend">
@@ -65,5 +81,10 @@
 
 <!-- JS file -->
 <script type="text/javascript" src="resources/js/javaScript.js"></script>
+
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
