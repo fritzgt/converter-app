@@ -61,7 +61,7 @@
 		  <div class="input-group-prepend">
 		    <span class="input-group-text" id="inputGroup-sizing-default">KM</span>
 		  </div>
-		  <input id="kInput" type="number" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+		  <input id="kInput" type="number" pattern="[0-9]*" name="amount" oninput="mEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
 	</div>
 
 	<!-- Equal sign -->
@@ -72,7 +72,7 @@
 		  <div class="input-group-prepend">
 		    <span class="input-group-text" id="inputGroup-sizing-default">Miles</span>
 		  </div>
-		  <input id="mInput" type="number" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+		  <input id="mInput" type="number" pattern="[0-9]*" name="amount" oninput="kEquation()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
 	</div><br><br>
 
 	<!-- Refresh button -->
