@@ -22,9 +22,7 @@ body {
 	padding: 7px;
 }
 
-
-
-
+/*conversion icon*/
 #icon {
 	width: auto;
 	height: 150px;
@@ -34,6 +32,7 @@ h1 {
 	font-size: 70px;
 }
 
+/*navbar*/
 #menu {
 	height: 60px;
 	padding-bottom: 25px;
