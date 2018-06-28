@@ -1,4 +1,4 @@
-const version = "1.3";
+const version = "1.3.1";
 const cacheName = `converterapp-${version}`;
 self.addEventListener('install', e => {
   const timeStamp = Date.now();
