@@ -20,7 +20,7 @@ function kEquation() {
 function fEquation() {
 	var f = document.getElementById("mInput").value;
     var totalC = (f - 32) * 5/9;
-    var c = totalC.toFixed(1); //Result shows only one decimal
+    var c = Math.floor(totalC); //Result shows only one decimal
     document.getElementById("kInput").value = c;
 }
 
@@ -28,7 +28,7 @@ function fEquation() {
 function cEquation() {
 	var i = document.getElementById("kInput").value;
     var totalF = i * 9/5 + 32; 
-    var f = totalF.toFixed(1); //Result shows only one decimal
+    var f = Math.floor(totalF); //Result shows only one decimal
     document.getElementById("mInput").value = f;
 }
 
