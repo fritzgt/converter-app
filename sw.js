@@ -1,24 +1,4 @@
-
-
-// self.addEventListener('install', function(e) {
-//  e.waitUntil(
-//    caches.open('airhorner').then(function(cache) {
-//      return cache.addAll([
-//        '/',
-//        '/index.html',
-//         'temp.html ',
-//         'lenght.html ',
-//         'volume.html',
-//         'weight.html',
-//         'resources/js/javaScript.js',
-//         'resources/css/style.css',
-//      ]);
-//    })
-//  );
-// });
-
-
-const version = "1.1";
+const version = "1.2";
 const cacheName = `converterapp-${version}`;
 self.addEventListener('install', e => {
   const timeStamp = Date.now();
