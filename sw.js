@@ -1,4 +1,4 @@
-const version = "1.3.2";
+const version = "1.4";
 const cacheName = `converterapp-${version}`;
 self.addEventListener('install', e => {
   const timeStamp = Date.now();
@@ -11,8 +11,8 @@ self.addEventListener('install', e => {
        'lenght.html ',
        'volume.html',
        'weight.html',
-       '/resources/js/javaScript.js',
-       '/resources/css/style.css',
+       'resources/js/javaScript.js',
+       'resources/css/style.css',
       ])
           .then(() => self.skipWaiting());
     })
